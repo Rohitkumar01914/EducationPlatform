@@ -1,5 +1,6 @@
 import ThemeButton from "./Components/ThemeButton";
 import Providers from "./Providers";
+import Navbar from "./Sections/Navbar";
 import "./globals.css";
 
 export const metadata = {
@@ -11,8 +12,9 @@ const RootLayout = ({ children }) => (
   <html lang="en">
     <body>
       <Providers>
+        <ThemeButton />
         <header>
-          <ThemeButton />
+          <Navbar />
         </header>
         <main>{children}</main>
       </Providers>
