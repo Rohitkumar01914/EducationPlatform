@@ -53,8 +53,14 @@ const Lilaslider = () => {
       };
 
   return (
-    <div>
-    <h2>Auto Play</h2>
+    <div className="border mb-12">
+
+    <h2 className="lg:text-3xl font-bold text-center
+    md:text-2xl
+    text-xl ">Our Leading Education Partners</h2>
+    <h1 className="lg:text-xl lg:font-normal text-center mb-12
+    md:text-xl md:font-normal
+    text-xs text-slaty-500">Our Premium Education Partners</h1>
     <Slider {...settings}>
       {partnersLogos.map((partnersLogo,index)=>(
         <img className="h-20" src={`${partnersLogo}.svg`} alt={partnersLogo}/>
