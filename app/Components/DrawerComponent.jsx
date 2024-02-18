@@ -35,7 +35,7 @@ const DrawerComponent = () => {
                 {page === "Home" ? (
                   <Link href={`/`}>Home</Link>
                 ) : (
-                  <Link href={`/${page}`}>{page}</Link>
+                  <Link href={`#${page}`}>{page}</Link>
                 )}
               </ListItemIcon>
             </ListItemButton>

@@ -1,5 +1,7 @@
-import ThemeButton from "./Components/ThemeButton";
-import Providers from "./Providers";
+// RootLayout.js
+
+import React from "react";
+import Footer from "./Sections/Footer";
 import Navbar from "./Sections/Navbar";
 import "./globals.css";
 
@@ -11,13 +13,14 @@ export const metadata = {
 const RootLayout = ({ children }) => (
   <html lang="en">
     <body>
-      <Providers>
-        <ThemeButton />
+      <main>
         <header>
           <Navbar />
         </header>
-        <main>{children}</main>
-      </Providers>
+
+        {children}
+        <Footer />
+      </main>
     </body>
   </html>
 );

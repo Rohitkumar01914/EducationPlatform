@@ -5,7 +5,7 @@ const pages = ["Home", "All-Course", "Success-story", "Hire-with-us", "Blog"];
 
 const Navbar = () => {
   return (
-    <nav className="nav-class">
+    <nav className="nav-class fixed w-full z-50 bg-white">
       <span className="lg:hidden md:visible">
         <DrawerComponent />
       </span>
@@ -16,7 +16,7 @@ const Navbar = () => {
       <ul className="navlist-class">
         {pages.map((page, index) => (
           <li className="listitem-class" key={index}>
-            <Link href={page === "Home" ? "/" : `/${page}`}>{page}</Link>
+            <Link href={page === "Home" ? "/" : `#${page}`}>{page}</Link>
           </li>
         ))}
       </ul>

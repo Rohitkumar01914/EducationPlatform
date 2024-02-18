@@ -57,10 +57,10 @@ const Lilaslider = () => {
   };
 
   return (
-    <div className="border mb-12">
+    <div className="border  bg-gray-100 pt-6 pb-6">
       <h2 className="Education-partner ">Our Leading Education Partners</h2>
       <h1
-        className="lg:text-xl lg:font-normal text-center mb-12
+        className="lg:text-xl lg:font-normal text-center 
     md:text-xl md:font-normal
     text-xs text-gray-500"
       >
@@ -69,7 +69,7 @@ const Lilaslider = () => {
       <Slider {...settings}>
         {partnersLogos.map((partnersLogo, index) => (
           <img
-            className="h-20"
+            className="lg:h-20 md:h-12 h-8 m-4"
             src={`${partnersLogo}.svg`}
             alt={partnersLogo}
           />
